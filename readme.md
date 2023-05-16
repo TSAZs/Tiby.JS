@@ -31,9 +31,9 @@ const Tiby = require("tiby.js");
 const client = new Tiby.Client();
 
 async function AskToTiby(qst) {
-    let res = await client.question("Ciao");
+    let res = await client.question(qst);
     return res;
 }
 
-console.log(AskToTiby);
+console.log(AskToTiby("ciao"));
 ```
